@@ -1,0 +1,18 @@
+{
+    "Schema to migration": {
+        "prefix": "Schema",
+        "body": [
+            "public function up()  {",
+            "\t$$this->schema->create('$1', function(Illuminate\\Database\\Schema\\Blueprint $$table){",
+            "\t\t$$table->increments('id');",
+            "\t\t$$table->timestamps();",
+                "\t});",
+            "",
+            "}",
+            "public function down()  {",
+            "\t$$this->schema->drop('$1');",
+            "}"
+        ],
+        "description": "Schema to migration"
+    }
+}

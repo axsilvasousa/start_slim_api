@@ -32,7 +32,7 @@ class MyMigration extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('Usuarios');
+        $table = $this->table('usuarios');
         $table->addColumn('nome', 'string')
             ->addColumn('senha', 'string')
             ->create();
